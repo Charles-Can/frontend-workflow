@@ -1,7 +1,8 @@
 function sass(){
   return {
           options: {
-              sourceMap: true
+              sourceMap: process.env.PROD !== 'true',
+              outputStyle: (process.env.PROD === 'true') ? 'compressed' : 'nested',
           },
           dist: {
             files: [{
@@ -11,7 +12,7 @@ function sass(){
             dest: '../public/css/',
             ext: '.css'
           }]
-        }
+        },
     };
 };
 
