@@ -9,5 +9,6 @@ module.exports = function( grunt ) {
     pkg: grunt.file.readJSON( 'package.json' ),
     sass: require('./grunt/sass.grunt'),
     postcss: require('./grunt/postcss.grunt'),
+    watch: require('./grunt/watch.grunt'),
   } );
 };
