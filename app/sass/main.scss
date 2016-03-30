@@ -2,4 +2,11 @@ body {
   background: blue;
   color: yellow;
   padding: .2em;
+  transition: all .5s ease-in-out;
+  animation-name: NAME-YOUR-ANIMATION;
+}
+
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }

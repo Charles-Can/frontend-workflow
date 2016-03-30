@@ -7,6 +7,7 @@ module.exports = function( grunt ) {
   // Project configuration.
   grunt.initConfig( {
     pkg: grunt.file.readJSON( 'package.json' ),
-    sass: require('./grunt/sass.grunt')
+    sass: require('./grunt/sass.grunt'),
+    postcss: require('./grunt/postcss.grunt'),
   } );
 };
