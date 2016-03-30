@@ -2,6 +2,9 @@ function sass(){
   return {
     options: {
       sourceMap: process.env.PROD !== 'true',
+      includePaths: [
+        './bower_components/bootstrap/scss/'
+      ],
     },
     dist: {
       files: [{
