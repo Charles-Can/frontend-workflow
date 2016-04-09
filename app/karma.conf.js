@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: './',
 
 
     // frameworks to use
@@ -15,7 +15,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './*_test.js',
       './src/*_test.js'
     ],
 
@@ -28,7 +27,14 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      './src/*_test.js' : ['webpack']
     },
+    webpack: require('./webpack.config'),
+    plugins: [
+      'karma-webpack',
+      'karma-jasmine',
+      'karma-chrome-launcher'
+    ],
 
 
     // test results reporter to use
