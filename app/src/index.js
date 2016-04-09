@@ -11,4 +11,4 @@ export default class IndexTest {
 
 }
 
-new IndexTest('Webpack is working!');
+// new IndexTest('Webpack is working!');

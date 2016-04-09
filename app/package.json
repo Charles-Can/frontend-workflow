@@ -20,6 +20,8 @@
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.1.0",
     "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.3",
     "karma-jasmine": "^0.3.8",
     "karma-webpack": "^1.7.0",

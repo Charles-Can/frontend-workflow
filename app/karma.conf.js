@@ -30,6 +30,7 @@ module.exports = function(config) {
       './src/*_test.js' : ['webpack']
     },
     webpack: require('./webpack.config'),
+    webpackMiddleware: {noInfo: true},
     plugins: [
       'karma-webpack',
       'karma-jasmine',
