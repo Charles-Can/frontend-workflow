@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -63,7 +63,7 @@
 	  }
 
 	  _createClass(IndexTest, [{
-	    key: 'runTest',
+	    key: "runTest",
 	    value: function runTest() {
 	      console.log(this._val);
 	    }
@@ -72,10 +72,10 @@
 	  return IndexTest;
 	}();
 
+	// new IndexTest('Webpack is working!');
+
+
 	exports.default = IndexTest;
-
-
-	new IndexTest('Webpack is working!');
 
 /***/ }
 /******/ ]);
