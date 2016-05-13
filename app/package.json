@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"npm run webpack-dev\" \"npm run css\" ",
+    "css": "grunt watch",
+    "webpack-dev": "webpack-dev-server --content-base ../public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,6 +14,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.5",
     "bower": "^1.7.7",
+    "concurrently": "^2.0.0",
     "cssnano": "^3.5.2",
     "grunt": "^0.4.5",
     "grunt-contrib-watch": "^1.0.0",

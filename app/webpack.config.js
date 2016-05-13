@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports={
   /*
   [entry]: declare our in file and out file
@@ -17,7 +19,8 @@ module.exports={
   attribute from the entries.
   */
   output: {
-    filename: '../public/js/[name].bundle.js',
+    path: path.resolve( __dirname, '../public/' ),
+    filename: 'js/[name].bundle.js',
   },
 
 };
